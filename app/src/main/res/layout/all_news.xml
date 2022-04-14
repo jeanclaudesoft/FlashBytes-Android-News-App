@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="1dp"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivImage"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_margin="4dp"
+            app:riv_corner_radius="15dp"
+            android:scaleType="centerCrop"
+            android:src="@color/purple_200"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="15dp"
+                android:ellipsize="end"
+                android:layout_weight="2"
+                android:fontFamily="@font/san_reg"
+                android:maxLines="2"
+                android:layout_marginTop="3dp"
+                android:padding="5dp"
+                android:text="Guerre en Ukraine... Que font les Etats Africains.?"
+                android:textColor="@color/semi_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:weightSum="2"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="2"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_primary">
+
+                    <TextView
+                        android:id="@+id/txtCat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/san_reg"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:padding="8dp"
+                        android:text="Finance"
+                        android:ellipsize="end"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/bookmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bookmark"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    app:tint="@color/dark_grey" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

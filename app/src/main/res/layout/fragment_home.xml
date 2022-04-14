@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".fragments.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/txtHeader"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:backgroundTint="@color/purple_200"
+            android:padding="0dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/logo">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/san_black"
+                android:gravity="center"
+                android:text="F"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/san_black"
+            android:gravity="start"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:text="@string/app_name"
+            android:textColor="@color/semi_black"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bell"
+            android:background="@drawable/image_bg"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="18dp"
+            app:tint="@color/purple_200" />
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtHeader"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    app:cardBackgroundColor="#E7EBF6">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Covid, Poutine, Sports..."
+                            android:textSize="18sp"
+                            android:layout_marginStart="15dp"
+                            android:textColor="@color/dark_grey"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/san_reg"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_search"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            app:tint="@color/dark_grey" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_filter"
+                    android:background="@drawable/image_bg"
+                    android:layout_gravity="center"
+                    android:padding="13dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:tint="@color/purple_200" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lytContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_marginTop="1dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Top News"
+                        android:textSize="20sp"
+                        android:textColor="@color/semi_black"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/san_bold"
+                        />
+                    <TextView
+                        android:id="@+id/seeMoreTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Voir plus"
+                        android:textSize="18sp"
+                        android:textColor="@color/purple_200"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/san_bold"
+                        />
+
+                </LinearLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/rvTopNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:paddingTop="8dp"
+                    android:clipToPadding="false"
+                    android:paddingBottom="8dp"
+                    android:layout_margin="1dp"/>
+
+                <!--            <TextView-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:text="Top Sources"-->
+                <!--                android:textSize="20sp"-->
+                <!--                android:textColor="@color/semi_black"-->
+                <!--                android:padding="8dp"-->
+                <!--                android:textStyle="bold"-->
+                <!--                android:layout_marginTop="10dp"-->
+                <!--                android:fontFamily="@font/san_bold"-->
+                <!--                />-->
+
+                <!--            <androidx.recyclerview.widget.RecyclerView-->
+                <!--                android:id="@+id/rvTopCat"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+                <!--                android:orientation="horizontal"-->
+                <!--                tools:listitem="@layout/home_categories"-->
+                <!--                android:layout_margin="12dp"/>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="For You"
+                        android:textSize="20sp"
+                        android:textColor="@color/semi_black"
+                        android:padding="8dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/san_bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/seeMoreAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Voir plus"
+                        android:textSize="18sp"
+                        android:textColor="@color/purple_200"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/san_bold"
+                        />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvAllNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"/>
+            </LinearLayout>
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-200dp"
+                android:indeterminateTint="@color/purple_200"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

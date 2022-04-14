@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".fragments.SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:padding="0dp"
+            android:src="@drawable/ic_arrow_left"
+            app:tint="@color/purple_200" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/san_bold"
+            android:padding="10dp"
+            android:text="Rechercher"
+            android:textColor="@color/semi_black"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_grey"
+            android:layout_weight="1"
+            android:layout_margin="15dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_filter"
+            android:background="@drawable/image_bg"
+            android:layout_gravity="center"
+            android:padding="13dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="15dp"
+            app:tint="@color/purple_200" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            app:boxCornerRadiusTopStart="30dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            android:visibility="gone"
+            app:boxCornerRadiusBottomStart="30dp"
+            app:boxBackgroundColor="#F4F6F9"
+            android:layout_weight="1"
+            app:boxStrokeWidth="0dp"
+            app:endIconDrawable="@color/search"
+            app:endIconTint="@color/dark_grey"
+            app:boxCornerRadiusBottomEnd="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Ukraine..."
+                android:textColorHint="@color/light_grey"
+                android:fontFamily="@font/san_reg"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTopCat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/home_categories" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAllNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        tools:listitem="@layout/all_news" />
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/purple_200"/>
+
+</LinearLayout>

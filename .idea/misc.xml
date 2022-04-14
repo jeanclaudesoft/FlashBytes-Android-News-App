@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashBytes/app/src/main/res/layout/activity_all_news.xml" value="0.29484029484029484" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashBytes/app/src/main/res/layout/activity_news_detail.xml" value="0.15305686190679776" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashBytes/app/src/main/res/layout/fragment_home.xml" value="0.15305686190679776" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/bg_primary.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/bottom_nav.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/cat_bg.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/ic_arrow_left.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/ic_bell.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/ic_bookmark.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/ic_bookmark_white.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/ic_filter.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/ic_home.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/ic_home_white.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/ic_list.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/ic_list_white.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/ic_search.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/ic_search_white.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/ic_share_2.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/ic_sharing_articles_pana.xml" value="0.143" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/ic_user.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/image_bg.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/image_bg_fill.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/language_selected.xml" value="0.143" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/language_unselected.xml" value="0.143" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/logo.xml" value="0.157" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/onboarding_indicator_active.xml" value="0.143" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/onboarding_indicator_inactive.xml" value="0.143" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/drawable/outline_grey.xml" value="0.1935" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/activity_all_news.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/activity_choose_language.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/activity_native_link.xml" value="0.21308016877637131" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/activity_news_detail.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/activity_splash.xml" value="0.15305686190679776" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/activity_start.xml" value="0.15305686190679776" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/activity_top_news.xml" value="0.22" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/all_news.xml" value="0.33" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/fragment_bookmark.xml" value="0.15305686190679776" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/fragment_categories.xml" value="0.22" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/fragment_search.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/home_categories.xml" value="0.33" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/item_lang.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/item_loading.xml" value="0.22" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/onboard_item.xml" value="0.15220179563916203" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/FlashInspire/app/src/main/res/layout/top_news.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

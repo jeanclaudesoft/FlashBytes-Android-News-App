@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.BookmarkFragment">
+
+    <LinearLayout
+        android:id="@+id/txtHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/logo"
+            android:backgroundTint="@color/purple_200"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/san_black"
+                android:gravity="center"
+                android:text="F"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/san_bold"
+            android:padding="10dp"
+            android:text="Mes Favoris"
+            android:textColor="@color/semi_black"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:backgroundTint="@color/purple_200"
+        android:padding="40dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/logo">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_bookmark"
+            android:layout_gravity="center"
+            android:padding="0dp"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.NativeLinkActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:weightSum="2"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_arrow_left"
+                android:layout_marginStart="15dp"
+                android:padding="0dp"
+                android:layout_gravity="center"
+                app:tint="@color/purple_200" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_share_2"
+                    android:background="@drawable/image_bg"
+                    android:layout_gravity="center"
+                    android:padding="12dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:tint="@color/purple_200" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/light_grey"/>
+
+    <WebView
+        android:id="@+id/webDescription"
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

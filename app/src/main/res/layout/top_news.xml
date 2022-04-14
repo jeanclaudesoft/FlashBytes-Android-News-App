@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="25dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@color/purple_200"
+        app:riv_corner_radius="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        >
+
+        <ImageView
+            android:id="@+id/bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bookmark"
+            android:background="@drawable/bg_primary"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="15dp"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_alignParentEnd="true"
+            app:tint="@color/white" />
+
+
+        <LinearLayout
+            android:id="@+id/titleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/titleview"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_primary">
+
+                <TextView
+                    android:id="@+id/txtCat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:fontFamily="@font/san_reg"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:text="Finance"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/san_reg"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:text="Guerre en Ukraine... Que font les Etats Africains.?"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
