@@ -33,7 +33,7 @@ Android Material Design News App using API from https://www.thenewsapi.com/ and 
    - Native WebView for news source
 
 # How to use ?
-   - Clone thhe repo
+   - Clone the repo
    - Go to  https://www.thenewsapi.com/ and create a free account
    - Go to Dashboard to get you api token
    - Paste the token in Constant File
